@@ -51,6 +51,9 @@ export default (
 
   return {
     getList: async (resource, params) => {
+      console.log("I'm working")
+      console.log(resource);
+      console.log(params);
       const query = {
         ...getFilterQuery(params.filter),
         ...getPaginationQuery(params.pagination),
